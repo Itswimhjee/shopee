@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <style>
+        .item1 { grid-area: main; }
+        .item2 { grid-area: right; }
+        .item3 { grid-area: right2; }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 9fr 2fr;
+        grid-template-areas: 
+            ' main right'
+            ' main right2';
+        gap: 10px;
+        background-color: white;
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    .grid-container > div {
+        text-align: center;
+        padding: 50px 0;
+        font-size: 20px;
+        color: white;
+    }
+
+    .grid-container > .item1 {
+        /* background-color: wh; */
+        background-image: linear-gradient(to top, #ee4d2d, #26aa99);
+    }
+
+    .grid-container > .item2 {
+        background-image: linear-gradient(to right, #ee4d2d, rgb(255, 204, 168));
+    }
+
+    .grid-container > .item3 {
+        background-image: linear-gradient(to  right, rgba(0, 0, 0, .26), #595959);
+    }
+        
+    form {
+        padding: 20px;
+        text-align: center;
+        background-image: linear-gradient(to bottom, #f53d2d, #f63)
+    }
+
+    form div {
+        margin-top: 20px;
+        display: inline-block;
+        border: 1px solid black;
+        padding: 6px 6px;
+        height: 36px;
+        background-color: white;
+    }
+
+    form input[type=text] {
+        border: none;
+        width: 650px;
+    }
+        
+    form input[type=submit] {
+        height: 36px;
+        width: 45px;
+        background-color: #ee4d2d;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <form action="https://www.google.com/search" target="_blank">
+        <div>
+            <input type="text" name="q" id="" placeholder=" Daftar & Dapat Voucher Gratis">
+            <input type="submit" value="🔍">
+        </div>
+    </form>
+
+    <div class="grid-container">
+        <div class="item1">Shopee Live Berkah</div>
+        <div class="item2">Brand Festival</div>
+        <div class="item3">Cashback Total 110rb</div>
+    </div>
+</body>
+</html>
